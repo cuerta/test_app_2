@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>App2</title>
+    <meta charset="utf-8">
+      <title>Appart</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <style>
+      /* Only necessary if you are using navbar-fixed-top */
+      body {
+        padding-top: 60px;
+      }
+    </style>
+
+    <%= csrf_meta_tags %>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   </head>
 
   <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+
+      </div>
+    </nav>
     <%= yield %>
   </body>
 </html>
