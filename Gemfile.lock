@@ -79,6 +79,8 @@ GEM
       railties (>= 4.1.0, < 6.0)
       responders
       warden (~> 1.2.3)
+    draft_generators (0.0.3)
+      devise
     duktape (2.3.0.0)
     erubi (1.8.0)
     execjs (2.7.0)
@@ -200,6 +202,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
+  draft_generators
   duktape
   jbuilder (~> 2.5)
   puma (~> 3.11)

@@ -10,6 +10,9 @@ ruby '2.3.3'
 # users
 gem 'devise'
 
+# draft generators
+gem 'draft_generators'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
