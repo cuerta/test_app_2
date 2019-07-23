@@ -1,12 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
-
-html{
-    scroll-behavior: smooth;
-}
-
-*{
-  box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css?family=Noticia+Text:400,700&display=swap');
 
 body html{
   margin: 0;
@@ -15,7 +7,7 @@ body html{
 
 body{
   overflow-x: hidden;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Noticia Text', serif;
   color: #232e56;
 }
 
@@ -34,8 +26,9 @@ body{
 .landing {
   position: relative;
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   display: table;
+  z-index: -1;
 }
 
 .home-wrap {
@@ -45,12 +38,11 @@ body{
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -999!important;
 }
 .home-inner {
   position: fixed;
   display: table;
-  top: -8rem;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -59,112 +51,41 @@ body{
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   will-change: transform;
-  background-image: url("img/Home.png")
+  background-image: url('img/Casa.png');
 }
 
-.dark-landing{
-  background-color: rgba(34,44,81,0.85);
+.caption {
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  top: 38%;
   color: white;
-  height: 80vh;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-
+  z-index: 1;
+  text-transform: uppercase;
 }
 
 .caption h1{
   font-size: 2rem;
   font-weight: 600;
   letter-spacing: .1rem;
-  text-shadow: .1rem .1rem .7rem black;
+  text-shadow: .05rem .05rem .8rem black;
   padding-bottom: 0.1rem;
 }
 
 .caption h3{
-  font-size: 0.9rem;
-  text-shadow: .1rem .1rem .5rem black;
+  font-size: 1.2rem;
+  text-shadow: .05rem .05rem .5rem black;
   padding-bottom: 1.6rem;
 }
 
 .btn-lg{
   border-width: medium;
-  border-radius: 3px;
+  border-radius: 0;
   padding: .6rem 1.3rem;
   font-size: 1rem;
-  box-shadow: 0.1rem .2rem .8rem black;
 }
 
 /*--Cómo Funciona CSS--*/
-
-.tabspacer{
-  padding: 2rem;
-}
-
-.tile{
-  padding: 1rem;
-}
-
-#tile-1 .tab-pane{
-  padding: 1.5rem;
-}
-
-#tile-1 .nav-tabs{
-  position:relative;
-  border:none!important;
-  background-color: white;
-  border-radius:6px;
-}
-
-#tile-1 .nav-tabs li{
-  margin:0px!important;
-}
-
-#tile-1 .nav-tabs li a{
-  position:relative;
-  font-size: .8rem;
-  border:none!important;
-  color: #c29574;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-top: 1rem;
-}
-#tile-1 .nav-tabs a:hover{
-  background-color:white!important;
-  border:none;
-}
-
-#tile-1 .slider{
-  display:inline-block;
-  width: auto;
-  height:2.5px;
-  border-radius:0px;
-  background-color:#232e56;
-  position:absolute;
-  z-index:1200;
-  bottom:0;
-  transition:all .3s linear;
-}
-
-#tile-1 .nav-tabs .active{
-  background-color:transparent!important;
-  border:none!important;
-  color:#c29574!important;
-}
-
-.nav-pills .nav-item .nav-link{
-  color: #c29574;
-  padding-top: .8rem;
-  background-color: white;
-  font-weight: 700;
-  font-size: .8rem;
-  text-transform: uppercase;
-}
-
-.nav-pills .nav-item .nav-link.active{
-  border-bottom: 2px solid #232e56;
-  border-radius: 0;
-}
-
-/*-- Propietario CSS--*/
 
 .narrow{
   width:75%;
@@ -193,6 +114,9 @@ body{
   border-color: #232e56;
   color: white;
 }
+
+
+/*-- Propietario CSS--*/
 
 .jumbotron{
   margin-bottom: 0;
@@ -330,6 +254,11 @@ hr.socket {
     padding-bottom: 1.2rem;
   }
 
+  .btn-lg{
+    padding: .5rem 1rem;
+    font-size: 1rem;
+  }
+
   .clients img{
     max-width: 40%;
     display: block;
@@ -341,7 +270,6 @@ hr.socket {
 /*--Navigation--*/
 .navbar{
   background-color: white !important;
-  border-bottom: .05px solid #cdcfd1;
   text-transform: uppercase;
   font-weight: 700;
   font-size: .9rem;
